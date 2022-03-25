@@ -3,7 +3,11 @@ import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
 
+import InputText from "~/components/ui/InputText"
+import { useState } from "react"
+
 const Home: NextPage = () => {
+  const [value, setValue] = useState("")
   return (
     <div className={styles.container}>
       <Head>
@@ -65,6 +69,14 @@ const Home: NextPage = () => {
           </span>
         </a>
       </footer>
+
+      <InputText
+        value={value}
+        onChange={setValue}
+        placeholder="入力してね"
+        label="ラベル"
+        id="入力"
+      />
     </div>
   )
 }
