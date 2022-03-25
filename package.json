@@ -10,7 +10,8 @@
     "prepare": "husky install",
     "format": "prettier --write ./**/*.{js,ts,tsx}",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=7357ae50e085"
   },
   "dependencies": {
     "@storybook/cli": "^6.4.19",
@@ -38,6 +39,7 @@
     "@types/react": "17.0.42",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "babel-loader": "^8.2.4",
+    "chromatic": "^6.5.3",
     "cz-customizable": "^6.1.0",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
