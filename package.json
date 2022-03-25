@@ -14,6 +14,7 @@
     "chromatic": "npx chromatic --project-token=7357ae50e085"
   },
   "dependencies": {
+    "@emotion/react": "^11.8.2",
     "@storybook/cli": "^6.4.19",
     "next": "12.1.0",
     "react": "17.0.2",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
+    "@emotion/babel-plugin": "^11.7.2",
     "@next/eslint-plugin-next": "^12.1.0",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
