@@ -10,7 +10,8 @@
     "prepare": "husky install",
     "format": "prettier --write ./**/*.{js,ts,tsx}",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=7357ae50e085"
   },
   "dependencies": {
     "@storybook/cli": "^6.4.19",
