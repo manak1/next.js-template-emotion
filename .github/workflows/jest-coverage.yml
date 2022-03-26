@@ -1,0 +1,16 @@
+name: Jest Test
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: ArtiomTr/jest-coverage-report-action@v2.0-rc.6
+        with:
+         github-token: ${{ secrets.GITHUB_TOKEN }}
+         test-script: npm run test:coverage
