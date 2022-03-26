@@ -12,7 +12,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic --project-token=7357ae50e085",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "test:coverage": "npm run test -- --testLocationInResults --json --coverage --outputFile='jest.results.json'"
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^11.2.0",

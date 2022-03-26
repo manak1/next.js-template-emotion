@@ -20,4 +20,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          test-command: npm run test -- --coverage --silent --testLocationInResults --ci --json --outputFile=\"report.json\""
+          test-command: npm run test:coverage
