@@ -5,5 +5,11 @@
     "next/core-web-vitals",
     "plugin:storybook/recommended",
     "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      "extends": ["plugin:testing-library/react"]
+    }
   ]
 }
