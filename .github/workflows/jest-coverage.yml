@@ -1,4 +1,4 @@
-name: Jest Test
+name: jest coverage
 
 on:
   pull_request:
@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/checkout@v1
       - uses: ArtiomTr/jest-coverage-report-action@v2.0-rc.6
         with:
          github-token: ${{ secrets.GITHUB_TOKEN }}
