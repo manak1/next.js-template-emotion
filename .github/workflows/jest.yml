@@ -16,8 +16,7 @@ jobs:
           node-version: 14.x
           cache: 'npm'
       - run: npm install
-      - uses: mattallty/jest-github-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: ArtiomTr/jest-coverage-report-action@v2.0-rc.6
         with:
-          test-command: npm run test:coverage
+         github-token: ${{ secrets.GITHUB_TOKEN }}
+         test-script: npm run test:coverage
