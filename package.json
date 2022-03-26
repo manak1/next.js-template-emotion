@@ -11,7 +11,7 @@
     "format": "prettier --write ./**/*.{js,ts,tsx}",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=7357ae50e085",
+    "chromatic": "npx chromatic --project-token=",
     "test": "jest --passWithNoTests",
     "test:coverage": "npm run test -- --coverage --silent --testLocationInResults --ci --json --outputFile=\"report.json\""
   },
