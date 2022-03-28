@@ -16,6 +16,7 @@
     "test:coverage": "npm run test -- --coverage --silent --testLocationInResults --ci --json --outputFile=\"report.json\""
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^1.7.0",
     "@emotion/babel-preset-css-prop": "^11.2.0",
     "@emotion/react": "^11.8.2",
     "@storybook/cli": "^6.4.19",
